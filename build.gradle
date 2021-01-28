@@ -1,0 +1,25 @@
+
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+}
+
+group = 'com.github.eljaiek.playground'
+version = '0.0.1'
+sourceCompatibility = '15'
+
+dependencies {
+
+    // Use TestNG framework, also requires calling test.useTestNG() below
+    testImplementation 'org.testng:testng:7.3.0'
+    testImplementation 'org.apache.poi:poi:5.0.0'
+    testImplementation 'org.apache.poi:poi-ooxml:5.0.0'
+}
+
+test {
+    // Use TestNG for unit tests
+    useTestNG()
+}
